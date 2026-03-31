@@ -702,7 +702,7 @@ export class AnchorEngine {
         for (const type of this.anchorEndDecorators.values()) {
             type.dispose();
         }
-        
+
         for (const subscription of this._subscriptions) {
             subscription.dispose();
         }
@@ -801,7 +801,7 @@ export class AnchorEngine {
         try {
             const config = this._config!;
             const endTag = config.tags.endTag;
-            
+
             const {
                 displayTagName,
                 displayInSidebar,
@@ -1111,7 +1111,7 @@ export class AnchorEngine {
 
     /**
      * Jump to an anchor in the current document
-     * 
+     *
      * @param anchor The anchor to jump to
      */
     public jumpToAnchor(anchor: EntryAnchor) {
@@ -1123,7 +1123,7 @@ export class AnchorEngine {
 
     /**
      * Move the cursor to the anchor relative to the current position
-     * 
+     *
      * @param direction The direction
      */
     public jumpToRelativeAnchor(direction: 'up'|'down') {
